@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoneyTableViewCell" id="KGk-i7-Jjw" customClass="MoneyTableViewCell" customModule="dontWorry2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CY-Dr-GPy">
+                        <rect key="frame" x="0.0" y="0.0" width="52" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="ah0-8G-mQz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deO-Oj-r2I">
+                        <rect key="frame" x="60" y="0.0" width="108" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="108" id="OMc-4c-0Mv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연체율" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le2-1v-DHC">
+                        <rect key="frame" x="176" y="0.0" width="144" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="deO-Oj-r2I" firstAttribute="leading" secondItem="9CY-Dr-GPy" secondAttribute="trailing" constant="8" symbolic="YES" id="343-sn-tti"/>
+                    <constraint firstItem="deO-Oj-r2I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3lv-Hw-As3"/>
+                    <constraint firstAttribute="trailing" secondItem="Le2-1v-DHC" secondAttribute="trailing" id="Asp-Zg-9JJ"/>
+                    <constraint firstItem="deO-Oj-r2I" firstAttribute="height" secondItem="9CY-Dr-GPy" secondAttribute="height" id="EOe-18-UBI"/>
+                    <constraint firstItem="9CY-Dr-GPy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jgD-wS-qAy"/>
+                    <constraint firstAttribute="bottom" secondItem="9CY-Dr-GPy" secondAttribute="bottom" id="oFF-dV-rrj"/>
+                    <constraint firstItem="Le2-1v-DHC" firstAttribute="leading" secondItem="deO-Oj-r2I" secondAttribute="trailing" constant="8" symbolic="YES" id="oND-4m-nFU"/>
+                    <constraint firstAttribute="bottom" secondItem="deO-Oj-r2I" secondAttribute="bottom" id="pd7-Th-jhh"/>
+                    <constraint firstItem="Le2-1v-DHC" firstAttribute="height" secondItem="9CY-Dr-GPy" secondAttribute="height" id="q5r-g3-ZG3"/>
+                    <constraint firstAttribute="bottom" secondItem="Le2-1v-DHC" secondAttribute="bottom" id="qkq-5O-Uje"/>
+                    <constraint firstItem="9CY-Dr-GPy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uQd-Yy-Igv"/>
+                    <constraint firstItem="Le2-1v-DHC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wnr-UK-sYw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="creditLabel" destination="9CY-Dr-GPy" id="4Fb-5o-VYc"/>
+                <outlet property="nameLabel" destination="deO-Oj-r2I" id="Idz-ej-K3v"/>
+                <outlet property="rateLabel" destination="Le2-1v-DHC" id="nGK-Id-ihI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
